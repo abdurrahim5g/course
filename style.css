@@ -13,6 +13,10 @@ body {
 a {
   text-decoration: none !important;
 }
+
+img {
+  max-width: 100%;
+}
 /* default css start =======
 ======================================================================== */
 .site-bg {
@@ -145,9 +149,6 @@ section.hero-area {
   padding: 100px 0;
 }
 
-.hero-content {
-}
-
 .hero-content h5 {
   font-size: 18px;
   color: #1f9df9;
@@ -167,9 +168,6 @@ section.hero-area {
 
 .hero-content span#text-animation {
   color: #110070;
-}
-
-.hero-content p {
 }
 
 .hero-social {
@@ -245,3 +243,64 @@ section.call-to-action::before {
   display: inline-block;
 }
 /* Call to action area style */
+
+section.acout-area {
+  padding: 60px 0;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.sectin-title h3 {
+  position: relative;
+  color: #1f9df9;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 10px;
+  text-align: center;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("assets/images/shadow.png") no-repeat center / cover;
+  left: 0;
+  top: 0;
+  mix-blend-mode: screen;
+}
+
+.sectin-title h3::before,
+.sectin-title h3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #1f9df9;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.sectin-title h3::before {
+  height: 4px;
+  width: 50px;
+  bottom: -1px;
+}
+
+.sectin-title h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #1f9df9;
+}
+
+.sectin-title {
+  margin-bottom: 30px;
+}
+/* About area style */
