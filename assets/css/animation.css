@@ -1,0 +1,47 @@
+a {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.pulse {
+  animation: pulse 2s infinite;
+  position: relative;
+  overflow: hidden;
+  top: 13px;
+}
+.pulse::before,
+.pulse::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #1f9df9;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+
+.pulse::before {
+  opacity: 0.5;
+}
+
+.pulse:hover:before,
+.pulse:hover:after {
+  height: 100%;
+}
+
+.pulse::after {
+  transition-delay: 0.2s;
+}
+
+.pulse:hover {
+  color: #fff !important;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #1f9df9;
+  }
+  100% {
+    box-shadow: 0 0 0 20px transparent;
+  }
+}

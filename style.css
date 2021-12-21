@@ -3,3 +3,131 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* default css start =======
+======================================================================== */
+.site-bg {
+  background-color: #1f9df9;
+}
+
+.site-color {
+  color: #8d8d8d;
+}
+
+.title-color {
+  color: #1f9df9;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* default css end =======
+======================================================================== */
+
+.header-top {
+  padding: 5px;
+}
+
+.contact-info > div {
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px 0 0;
+}
+
+.contact-info a {
+  color: #fff;
+}
+
+/* header.header-area .social-link {
+} */
+
+header.header-area .social-link ul {
+  text-align: right;
+  margin: 0;
+}
+
+header.header-area .social-link ul li {
+  display: inline-block;
+}
+
+header.header-area .social-link ul li a {
+  color: #1f9df9;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.contact-info > div i {
+  margin: 0 5px 0 0;
+}
+
+header.header-area .social-link ul li a:hover i {
+  transform: scale(1.2);
+}
+
+header.header-area .social-link ul li a i {
+  transition: 0.1s;
+}
+/* header top style */
+
+.header-menu {
+  border-bottom: 1px solid #ddd;
+}
+
+.header-menu .logo {
+  max-width: 160px;
+}
+
+.header-menu .logo a {
+  display: block;
+}
+
+.header-menu .logo a img {
+  max-width: 100%;
+}
+
+/* #menu {
+} */
+
+#menu ul {
+  text-align: right;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 25px 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+  color: #1f9df9;
+}
+
+#menu .contact {
+  border: 2px solid #1f9df9;
+  padding: 5px 30px;
+  border-radius: 30px;
+  color: #1f9df9;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.header-menu .row {
+  align-items: center;
+}
+
+/* header menu style */
