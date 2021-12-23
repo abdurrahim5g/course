@@ -362,6 +362,7 @@ section.skill-area .row {
   background: transparent;
   float: left;
   text-transform: capitalize;
+  color: #8d8d8d;
 }
 
 button.mixitup-control-active {
