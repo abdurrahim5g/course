@@ -480,3 +480,28 @@ div#testmonial-slider:hover .arrow-right.slick-arrow {
   left: inherit;
 }
 /* Testmonial area style end */
+
+/* Footer style start */
+footer.footer-area {
+  background: #1f9df9;
+  text-align: center;
+}
+
+.footer-content {
+  padding: 30px 0;
+}
+
+.footer-logo a {
+  display: inline-block;
+}
+
+.footer-content img {
+  max-width: 150px;
+}
+
+.footer-content p {
+  margin: 20px 0 0 0;
+  color: #fff;
+  opacity: 0.8;
+}
+/* Footer style end */
