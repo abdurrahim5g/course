@@ -370,5 +370,113 @@ button.mixitup-control-active {
   color: #fff;
   border-radius: 25px;
 }
-
 /* Portfolio area style end */
+
+/* Testmonial area style end */
+.testmonial-content {
+  background: #fff;
+  padding: 75px 20px 30px 20px;
+  position: relative;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  overflow: visible;
+  margin: 56px 0 20px;
+}
+
+.testmonial-content img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1f9df9;
+}
+
+.testmonial-content h5 {
+  text-align: center;
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.testmonial-content h5 span {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0 30px;
+  font-weight: 500;
+}
+
+.testmonial-content p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.testmonial-content .reating i {
+  color: #ffdb1c;
+}
+
+section.testmonial-area {
+  position: relative;
+  overflow-x: hidden;
+}
+
+img.slick-arrow {
+  position: absolute;
+  z-index: 99;
+  left: -30px;
+  top: 55%;
+  cursor: pointer;
+  width: 30px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.slick-slide {
+  opacity: 0.5;
+}
+
+.slick-slide.slick-current {
+  opacity: 1;
+}
+
+img.arrow-right.slick-arrow {
+  left: inherit;
+  right: -30px;
+}
+
+.slick-list {
+  position: relative;
+}
+
+.slick-list:before,
+.slick-list:after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: calc(100% - 56px);
+  background: linear-gradient(90deg, #ecf0f3, transparent);
+  z-index: 9;
+  left: 0;
+  bottom: 0;
+}
+
+.slick-list:before {
+  left: inherit;
+  right: 0;
+  background: linear-gradient(270deg, #ecf0f3, transparent);
+}
+
+div#testmonial-slider:hover .slick-arrow {
+  left: 10px;
+  opacity: 1;
+}
+
+div#testmonial-slider:hover .arrow-right.slick-arrow {
+  right: 10px;
+  left: inherit;
+}
+/* Testmonial area style end */
