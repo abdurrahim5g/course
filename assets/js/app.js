@@ -1,4 +1,4 @@
 $(document).ready(function () {
-  // header area shadow control
-  console.log("hello");
+  // Mixit Up js
+  var mixer = mixitup(".project-filter");
 });

@@ -17,11 +17,17 @@ img {
 .site-bg {
   background-color: rgb(31, 157, 249);
 }
+.gray-bg {
+  background-color: #ecf0f3;
+}
 .site-color {
   color: rgb(141, 141, 141);
 }
 .title-color {
   color: rgb(31, 157, 249);
+}
+.section-padding {
+  padding: 80px 0;
 }
 ul {
   list-style: none;
@@ -201,6 +207,7 @@ section.acout-area {
   font-weight: 600;
   padding: 0px 0px 10px;
   text-align: center;
+  text-transform: capitalize;
 }
 .about-image::before {
   content: "";
@@ -223,13 +230,13 @@ section.acout-area {
   bottom: 0px;
   transform: translateX(-50%);
 }
-.section-title h3::before,
-.section-title h3::after {
+.section-title.left h3::before,
+.section-title.left h3::after {
   left: 0px;
   transform: translate(0px);
 }
-.section-title h3,
-.section-title h3 {
+.section-title.left h3,
+.section-title.left h3 {
   text-align: left;
 }
 .section-title h3::before {
@@ -300,3 +307,67 @@ section.skill-area .row {
 .skill-image {
   padding: 0 10%;
 }
+.skill-image img {
+  border-radius: 75px;
+}
+
+/* Portfolio area style start */
+.project-content {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 4px 7px 5px #b1b1b1;
+  overflow: hidden;
+  border: 1px solid #e4e4e4;
+}
+.project-content a {
+  height: 400px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.project-content h4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(31 157 249 / 70%);
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 9;
+  color: #fff;
+  line-height: 400px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.project-content:hover h4 {
+  opacity: 1;
+}
+.project-content img {
+  width: 100%;
+}
+
+.portfolio-filter-menu {
+  text-align: center;
+  margin: 0 auto 60px;
+  background: #fff;
+  box-shadow: 1px 1px 7px rgb(0 0 0 / 25%);
+  border-radius: 47px;
+  display: inline-block;
+}
+
+.portfolio-filter-menu button {
+  border: 0;
+  padding: 10px 27px;
+  background: transparent;
+  float: left;
+  text-transform: capitalize;
+}
+
+button.mixitup-control-active {
+  background: #1f9df9;
+  color: #fff;
+  border-radius: 25px;
+}
+
+/* Portfolio area style end */
