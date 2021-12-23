@@ -481,6 +481,75 @@ div#testmonial-slider:hover .arrow-right.slick-arrow {
 }
 /* Testmonial area style end */
 
+/* seminar area style start */
+.seminar-item {
+  border-radius: 5px;
+  box-shadow: 1px 1px 9px #c8c8c8;
+  /* background: #ecf0f3; */
+}
+
+.seminar-item ul {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+
+.seminar-item ul li {
+  background: #1f9df9;
+  padding: 3px 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.seminar-item .seminar-body {
+  padding: 20px;
+}
+
+.seminar-item .seminar-body .date {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.seminar-item .seminar-body .seminar-text {
+  overflow: hidden;
+}
+
+.seminar-head {
+  position: relative;
+}
+
+.seminar-item .seminar-body .date h6 {
+  font-size: 24px;
+  text-align: center;
+  color: #1f9df9;
+  font-weight: 700;
+  margin: 3px 0 0 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.seminar-item .seminar-body .date h6 span {
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+}
+
+.seminar-item .seminar-body .seminar-text h4 {
+  color: #1f9df9;
+  font-weight: 700;
+}
+
+.seminar-item .seminar-body .seminar-text p {
+  font-size: 14px;
+}
+/* seminar area style end */
+
 /* Footer style start */
 footer.footer-area {
   background: #1f9df9;
