@@ -10,9 +10,8 @@ $(document).ready(function () {
     infinite: true,
     // cssEase: "linear",
     speed: 500,
-    prevArrow: "<img src='../assets/images/arrow-left.png'>",
-    nextArrow:
-      "<img src='../assets/images/arrow-right.png' class='arrow-right'>",
+    prevArrow: "<img src='assets/images/arrow-left.png'>",
+    nextArrow: "<img src='assets/images/arrow-right.png' class='arrow-right'>",
     responsive: [
       {
         breakpoint: 767,
