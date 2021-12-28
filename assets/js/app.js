@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
   // smooth sctoll
-  $("#menu ul li a").click(function (e) {
+  $("#menu ul li a, .actio-btn a").click(function (e) {
     e.preventDefault();
     var id = $(this).attr("href");
     var fromTop = $(id).offset().top - 115;
@@ -55,6 +55,7 @@ $(document).ready(function () {
     $("#menu ul li a").removeClass("active");
     $(this).addClass("active");
     $("#menu").removeClass("active");
+    $("#mobile-menu-icon").removeClass("cross");
   });
 
   $("#to_top").click(function () {
