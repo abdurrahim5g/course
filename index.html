@@ -89,15 +89,19 @@
               </div>
               <div id="menu" class="main-menu">
                 <ul>
-                  <li><a href="#" class="site-color active">home</a></li>
-                  <li><a href="#" class="site-color">about us</a></li>
+                  <li><a href="#home" class="site-color active">home</a></li>
+                  <li><a href="#about" class="site-color">about us</a></li>
                   <!-- <li><a href="#" class="site-color">Why me</a></li> -->
                   <!-- <li><a href="#" class="site-color">Course</a></li> -->
-                  <li><a href="#" class="site-color">Portfolio</a></li>
-                  <li><a href="#" class="site-color">Testmonial</a></li>
+                  <li><a href="#portfolio" class="site-color">Portfolio</a></li>
+                  <li>
+                    <a href="#testmonial" class="site-color">Testmonial</a>
+                  </li>
                   <!-- <li><a href="#" class="site-color">Seminar</a></li> -->
                   <li>
-                    <a href="#" class="site-color contact pulse">Contact</a>
+                    <a href="#contact" class="site-color contact pulse"
+                      >Contact</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -111,7 +115,7 @@
     <!-- header area end -->
 
     <!-- hero-area start -->
-    <section class="hero-area">
+    <section class="hero-area" id="home">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -201,7 +205,7 @@
     </section>
     <!-- call-to-action end -->
 
-    <section class="acout-area">
+    <section class="acout-area" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -298,7 +302,7 @@
     <!-- Slills area end -->
 
     <!-- Portfolio area start -->
-    <section class="portfolio-area section-padding">
+    <section class="portfolio-area section-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -443,7 +447,7 @@
     <!-- Portfolio area end -->
 
     <!-- Testmonial area start -->
-    <section class="testmonial-area section-padding gray-bg">
+    <section class="testmonial-area section-padding gray-bg" id="testmonial">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -572,10 +576,10 @@
               </div>
               <div class="seminar-body">
                 <div class="date">
-                  <h6>31<span>DEC</span></h6>
+                  <h6>30<span>DEC</span></h6>
                 </div>
                 <div class="seminar-text">
-                  <h4>Lorem Ipsum</h4>
+                  <h4>Online Seminar for Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Pariatur quidem porro molestias possimus assumenda ullam
@@ -601,10 +605,10 @@
               </div>
               <div class="seminar-body">
                 <div class="date">
-                  <h6>31<span>DEC</span></h6>
+                  <h6>30<span>DEC</span></h6>
                 </div>
                 <div class="seminar-text">
-                  <h4>Lorem Ipsum</h4>
+                  <h4>Online Seminar for Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Pariatur quidem porro molestias possimus assumenda ullam
@@ -622,7 +626,7 @@
     <!-- Seminar area end -->
 
     <!-- Contact area start -->
-    <section class="contact-area section-padding gray-bg">
+    <section class="contact-area section-padding gray-bg" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -666,6 +670,10 @@
       </div>
     </footer>
     <!-- footer area end -->
+
+    <div id="to_top" class="to_top_show">
+      <i class="fas fa-angle-right"></i>
+    </div>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>

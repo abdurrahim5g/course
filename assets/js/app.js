@@ -40,4 +40,35 @@ $(document).ready(function () {
     backDelay: 2000,
     startDelay: 200,
   });
+
+  // smooth sctoll
+  $("#menu ul li a").click(function (e) {
+    e.preventDefault();
+    var id = $(this).attr("href");
+    var fromTop = $(id).offset().top - 115;
+
+    $("html").animate({
+      scrollTop: fromTop,
+    });
+
+    // togge active menu
+    $("#menu ul li a").removeClass("active");
+    $(this).addClass("active");
+    $("#menu").removeClass("active");
+  });
+
+  $("#to_top").click(function () {
+    // console.log("hello");
+    $("html").animate({
+      scrollTop: 0,
+    });
+  });
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 1000) {
+      $("#to_top").addClass("to_top_show");
+    } else {
+      $("#to_top").removeClass("to_top_show");
+    }
+  });
 });

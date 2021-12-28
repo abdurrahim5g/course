@@ -224,6 +224,9 @@
   .contact-area iframe html {
     overflow-x: hidden !important;
   }
+  .seminar-item .seminar-body .seminar-text h4 {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -232,5 +235,8 @@
   }
   .hero-social li {
     margin-right: 10px;
+  }
+  .container {
+    max-width: 580px;
   }
 }
