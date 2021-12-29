@@ -18,7 +18,7 @@ img {
   background-color: rgb(31, 157, 249);
 }
 .gray-bg {
-  background-color: #ecf0f3;
+  background-color: rgb(236, 240, 243);
 }
 .site-color {
   color: rgb(141, 141, 141);
@@ -27,25 +27,20 @@ img {
   color: rgb(31, 157, 249);
 }
 .section-padding {
-  padding: 80px 0;
+  padding: 80px 0px;
 }
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-
-/* 
-====>> header fixed
-*/
-
 .header-area {
   position: fixed;
   width: 100%;
-  z-index: 999999999999999;
-  background: #fff;
-  top: 0;
-  left: 0;
+  z-index: 2147483647;
+  background: rgb(255, 255, 255);
+  top: 0px;
+  left: 0px;
 }
 .header-top {
   padding: 5px;
@@ -274,8 +269,8 @@ section.skill-area .row {
 .progress-box .progress {
   height: 10px;
   border-radius: 30px;
+  background: rgb(204, 204, 204);
   overflow: visible !important;
-  background: #cccccc;
 }
 .progress-box {
   margin: 0px 0px 20px;
@@ -319,20 +314,18 @@ section.skill-area .row {
   right: -5px;
 }
 .skill-image {
-  padding: 0 10%;
+  padding: 0px 10%;
 }
 .skill-image img {
   border-radius: 75px;
 }
-
-/* Portfolio area style start */
 .project-content {
   width: 100%;
   margin-bottom: 30px;
   border-radius: 5px;
-  box-shadow: 4px 7px 5px #b1b1b1;
+  box-shadow: rgb(177, 177, 177) 4px 7px 5px;
   overflow: hidden;
-  border: 1px solid #e4e4e4;
+  border: 1px solid rgb(228, 228, 228);
 }
 .project-content a {
   height: 400px;
@@ -344,15 +337,15 @@ section.skill-area .row {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(31 157 249 / 70%);
-  left: 0;
-  top: 0;
+  background: rgba(31, 157, 249, 0.7);
+  left: 0px;
+  top: 0px;
   text-align: center;
   z-index: 9;
-  color: #fff;
+  color: rgb(255, 255, 255);
   line-height: 400px;
   opacity: 0;
-  transition: 0.3s;
+  transition: all 0.3s ease 0s;
 }
 .project-content:hover h4 {
   opacity: 1;
@@ -360,44 +353,37 @@ section.skill-area .row {
 .project-content img {
   width: 100%;
 }
-
 .portfolio-filter-menu {
   text-align: center;
-  margin: 0 auto 60px;
-  background: #fff;
-  box-shadow: 1px 1px 7px rgb(0 0 0 / 25%);
+  margin: 0px auto 60px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 7px;
   border-radius: 47px;
   display: inline-block;
 }
-
 .portfolio-filter-menu button {
-  border: 0;
+  border: 0px;
   padding: 10px 27px;
   background: transparent;
   float: left;
   text-transform: capitalize;
-  color: #8d8d8d;
+  color: rgb(141, 141, 141);
 }
-
 button.mixitup-control-active {
-  background: #1f9df9;
-  color: #fff;
+  background: rgb(31, 157, 249);
+  color: rgb(255, 255, 255);
   border-radius: 25px;
 }
-/* Portfolio area style end */
-
-/* Testmonial area style end */
 .testmonial-content {
-  background: #fff;
-  padding: 75px 20px 30px 20px;
+  background: rgb(255, 255, 255);
+  padding: 75px 20px 30px;
   position: relative;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px;
   border-radius: 5px;
   text-align: center;
   overflow: visible;
-  margin: 56px 0 20px;
+  margin: 56px 0px 20px;
 }
-
 .testmonial-content img {
   position: absolute;
   width: 100px;
@@ -407,37 +393,32 @@ button.mixitup-control-active {
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1f9df9;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 3px,
+    rgb(31, 157, 249) 0px 0px 0px 5px;
 }
-
 .testmonial-content h5 {
   text-align: center;
-  color: #444;
+  color: rgb(68, 68, 68);
   font-size: 18px;
   font-weight: 700;
 }
-
 .testmonial-content h5 span {
   display: block;
   font-size: 14px;
-  margin: 5px 0 30px;
+  margin: 5px 0px 30px;
   font-weight: 500;
 }
-
 .testmonial-content p {
   font-size: 14px;
   font-weight: 400;
 }
-
 .testmonial-content .reating i {
-  color: #ffdb1c;
+  color: rgb(255, 219, 28);
 }
-
 section.testmonial-area {
   position: relative;
   overflow-x: hidden;
 }
-
 img.slick-arrow {
   position: absolute;
   z-index: 99;
@@ -446,184 +427,146 @@ img.slick-arrow {
   cursor: pointer;
   width: 30px;
   opacity: 0;
-  transition: 0.3s;
+  transition: all 0.3s ease 0s;
 }
-
 .slick-slide {
   opacity: 0.5;
 }
-
 .slick-slide.slick-current {
   opacity: 1;
 }
-
 img.arrow-right.slick-arrow {
   left: inherit;
   right: -30px;
 }
-
 .slick-list {
   position: relative;
 }
-
-.slick-list:before,
-.slick-list:after {
+.slick-list::before,
+.slick-list::after {
   content: "";
   position: absolute;
   width: 20%;
   height: calc(100% - 56px);
-  background: linear-gradient(90deg, #ecf0f3, transparent);
+  background: linear-gradient(90deg, rgb(236, 240, 243), transparent);
   z-index: 9;
-  left: 0;
-  bottom: 0;
+  left: 0px;
+  bottom: 0px;
 }
-
-.slick-list:before {
+.slick-list::before {
   left: inherit;
-  right: 0;
-  background: linear-gradient(270deg, #ecf0f3, transparent);
+  right: 0px;
+  background: linear-gradient(270deg, rgb(236, 240, 243), transparent);
 }
-
 div#testmonial-slider:hover .slick-arrow {
   left: 10px;
   opacity: 1;
 }
-
 div#testmonial-slider:hover .arrow-right.slick-arrow {
   right: 10px;
   left: inherit;
 }
-/* Testmonial area style end */
-
-/* seminar area style start */
 .seminar-item {
   border-radius: 5px;
-  box-shadow: 1px 1px 9px #c8c8c8;
-  /* background: #ecf0f3; */
+  box-shadow: rgb(200, 200, 200) 1px 1px 9px;
 }
-
 .seminar-item ul {
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
 }
-
 .seminar-item ul li {
-  background: #1f9df9;
+  background: rgb(31, 157, 249);
   padding: 3px 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 5px;
 }
-
 .seminar-item .seminar-body {
   padding: 20px;
 }
-
 .seminar-item .seminar-body .date {
   float: left;
-  margin: 0 20px 0 0;
+  margin: 0px 20px 0px 0px;
 }
-
 .seminar-item .seminar-body .seminar-text {
   overflow: hidden;
 }
-
 .seminar-head {
   position: relative;
 }
-
 .seminar-item .seminar-body .date h6 {
   font-size: 24px;
   text-align: center;
-  color: #1f9df9;
+  color: rgb(31, 157, 249);
   font-weight: 700;
-  margin: 3px 0 0 0;
-  background: #fff;
+  margin: 3px 0px 0px;
+  background: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 4px;
   border: 1px solid;
 }
-
 .seminar-item .seminar-body .date h6 span {
   font-size: 14px;
   display: block;
   font-weight: 500;
 }
-
 .seminar-item .seminar-body .seminar-text h4 {
-  color: #1f9df9;
+  color: rgb(31, 157, 249);
   font-weight: 700;
 }
-
 .seminar-item .seminar-body .seminar-text p {
   font-size: 14px;
 }
-/* seminar area style end */
-
-/* Footer style start */
 footer.footer-area {
-  background: #1f9df9;
+  background: rgb(31, 157, 249);
   text-align: center;
 }
-
 .footer-content {
-  padding: 30px 0;
+  padding: 30px 0px;
 }
-
 .footer-logo a {
   display: inline-block;
 }
-
 .footer-content img {
   max-width: 150px;
 }
-
 .footer-content p {
-  margin: 20px 0 0 0;
-  color: #fff;
+  margin: 20px 0px 0px;
+  color: rgb(255, 255, 255);
   opacity: 0.8;
 }
-/* Footer style end */
-
-/* Click to top */
 div#to_top {
   position: fixed;
   bottom: 20px;
   right: 15px;
-  background: rgb(31 157 249 / 70%);
+  background: rgba(31, 157, 249, 0.7);
   width: 40px;
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease 0s;
   opacity: 0;
   z-index: 999999;
 }
-
 div#to_top i {
   text-align: center;
   display: block;
   font-size: 30px;
   line-height: 40px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   transform: rotate(-90deg);
 }
-
 .to_top_show {
   opacity: 1 !important;
 }
-/* 
-8
-*===>>>Course module styles
- */
-
 section.course-module {
-  padding: 50px 0 10px;
-  background: url("assets/images/page-title-bg.jpg") no-repeat center / cover;
+  padding: 50px 0px 10px;
+  background: url("assets/images/page-title-bg.jpg") center center / cover
+    no-repeat;
   position: relative;
   z-index: 9;
 }
@@ -632,65 +575,55 @@ section.course-module::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #1f9df9;
+  background: rgb(31, 157, 249);
   opacity: 0.6;
   z-index: -1;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
 }
-
 section.course-module h3 {
+  color: rgb(255, 255, 255);
   text-align: center !important;
-  color: #fff;
 }
-
 section.course-module h3::before,
 section.course-module h3::after {
+  background-color: rgb(255, 255, 255);
   text-align: center !important;
-  background-color: #fff;
 }
-
 .accordion-item {
-  background: #fff;
-  border-bottom: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(204, 204, 204);
   position: relative;
 }
-
 .accordion-item button {
   width: 100%;
-  border: 0;
+  border: 0px;
   outline: none;
-  background: #fff;
-  color: #8d8d8d;
+  background: rgb(255, 255, 255);
   text-align: left;
-  padding: 10px 25px;
+  padding: 20px 25px;
   font-size: 18px;
   font-weight: 500;
   color: rgb(141, 141, 141);
   display: block;
 }
-
 div#classModule {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
 }
-
 .accordion-header {
-  margin: 0;
+  margin: 0px;
 }
-
 .accordion-item:last-child {
-  border: 0;
+  border: 0px;
 }
-
 .accordion-body {
   padding: 10px 25px;
 }
-
 .accordion-body ul li {
   position: relative;
-  padding: 3px 0 3px 30px;
+  padding: 3px 0px 3px 30px;
+  text-transform: capitalize;
 }
-
 .accordion-body ul li::before {
   content: "";
   position: absolute;
@@ -698,40 +631,39 @@ div#classModule {
   height: 10px;
   background: transparent;
   border-radius: 50%;
-  top: 50%;
-  left: 0;
-  border: 2px solid #1f9df9;
+  top: 15px;
+  left: 0px;
+  border: 2px solid rgb(31, 157, 249);
   transform: translateY(-50%);
 }
-
 .accordion-body ul {
-  padding: 0 0 0 3px;
+  padding: 0px 0px 0px 3px;
 }
-
 .accordion-item i {
   position: absolute;
   right: 25px;
-  top: 10px;
-  background: #8d8d9c;
+  top: 30px;
+  background: rgb(141, 141, 156);
   width: 20px;
   height: 20px;
   text-align: center;
   line-height: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 50%;
-  transition: 0.3s;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-50%);
 }
-
 .class-content {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
-
 .accordion-item.active button {
-  color: #1f9df9 !important;
+  color: rgb(31, 157, 249) !important;
 }
-
 .accordion-item.active i {
-  background: #1f9df9;
+  background: rgb(31, 157, 249);
   transform: rotate(180deg);
+}
+.accordion-item.active i {
+  top: 20px;
 }
