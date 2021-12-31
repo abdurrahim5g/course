@@ -30,7 +30,7 @@ $(document).ready(function () {
 
   // Typed js
   var typed = new Typed("#text-animation", {
-    strings: ["Web Designer", "Trainer", "YouTubar", "WordPress Developer"],
+    strings: ["Web Designer", "Trainer", "YouTuber", "WordPress Developer"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50,
